@@ -6,7 +6,7 @@ export const buscarIpca = () => {
 
 export const buscarIpcaPorId = (id) => {
   const idIpca = parseInt(id);
-  return historicoInflacao.find(ipca => ipca.id === idIpca);
+  return historicoInflacao.find(ipca => ipca.ano === idIpca);
 };
 
 export const buscarIpcaPorAno = (anoIpca) => {

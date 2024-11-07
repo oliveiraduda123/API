@@ -4,7 +4,7 @@ import { buscarIpca, buscarIpcaPorId, buscarIpcaPorAno } from './servicos/servic
 const app = express();
 
 app.get('/historicoIPCA', (req, res) => {
-  const anoIpca = req.query.busca;
+  const anoIpca = req.query.ano;
   const resultado = anoIpca ? buscarIpcaPorAno(anoIpca) : buscarIpca();
   if (resultado) {
     res.json(resultado);
