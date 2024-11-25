@@ -1,5 +1,5 @@
 import express from 'express';
-import { buscarIpca, buscarIpcaPorId, buscarIpcaPorAno } from './servicos/servico.js';
+import { buscarIpca, buscarIpcaPorId, buscarIpcaPorAno} from './servicos/servico.js';
 
 const app = express();
 
@@ -22,6 +22,7 @@ app.get('/historicoIPCA/:idIpca', (req, res) => {
     res.status(400).send({ "erro": "Elemento não encontrado" });
   }
 });
+
 
 app.listen(8080, () => {
   console.log('Servidor iniciado na porta 8080');
