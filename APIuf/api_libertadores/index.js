@@ -1,5 +1,5 @@
 import express from 'express';
-import { retornaCampeonatos } from './servico/retornaCampeonatos_servico';
+import { retornaCampeonatos } from './servico/retornaCampeonatos_servico.js';
 // import pool from './servico/conexao.js';
 
 const app = express();

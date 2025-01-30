@@ -7,4 +7,4 @@ const pool = mysql.createPool({
     database: 'libertadores'
 });
 
-export default pool;
+export default pool
