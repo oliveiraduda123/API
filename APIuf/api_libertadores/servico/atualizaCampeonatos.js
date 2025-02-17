@@ -22,5 +22,4 @@ export async function atualizaCampeonatoParcial(id, campos){
     console.log(resposta);
     conexao.release();
     return resposta;
-
 }
